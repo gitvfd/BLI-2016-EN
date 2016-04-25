@@ -47,7 +47,7 @@ $(function () {
     // It is very important that this does NOT point to a 301 redirect url like `oecdbetterlifeindex.org`
     // without the `www` because (Mobile) Safari and IE lose everything after the hash.
     var url = $(this).attr('href') + sliderValues;
-    window.location = window.open(url,'_blank');
+    window.open(url,'_blank');
     e.preventDefault();
     e.stopPropagation();
     return false;
@@ -60,7 +60,7 @@ $(function () {
     var country2 = $('.js-dropdown-2').val() !== null ? $('.js-dropdown-2').val() : "";
 
     var url = $(this).attr('href') + '/#' + country1 + '+' + country2
-    window.location = window.open(url,'_blank');
+    window.open(url,'_blank');
     e.preventDefault();
     e.stopPropagation();
     return false;
